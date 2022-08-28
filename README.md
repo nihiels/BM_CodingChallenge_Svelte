@@ -58,15 +58,55 @@ Bonus:
 
 _Good luck_
 
-##Work done
-Also for me a good overview about my done working steps...
+Thanks!
+I tried to be very detailed in my code comments. Here follows some general information...
+
+##Styling
+Define global styles in `src/styles/global.scss` <br>
+Colors are defined in `src/styles/colors.scss` and can be used in componts (when located in `src/components`) like this:
+
+```scss
+@use '../styles/colors';
+.mySelector {
+	color: colors.$primary;
+}
+```
 
 ###Utils
-  - I wrote my first TS Function (*YEAH*), it gets a numer and returns it to a currency string
-###still todo:
-  tests unit: https://davipon.hashnode.dev/test-svelte-component-using-vitest-playwright
-  code cleaner in commit process
-  
-![img.png](img.png)
+I wrote my first TS Function (_YEAH_), it gets a numer and returns it to a currency string: `src/utils/toCurrency.ts`
 
-![img_1.png](img_1.png)
+```js
+//usage:
+import toCurrency from '../utils/toCurrency';
+toCurrency(number or numerableString)
+```
+
+###Testing
+
+```bash
+# run tests
+npm run test
+
+# start test generator
+npm run testGen
+```
+
+I decided to run all tests on one page, as it makes testing faster, but I'm not sure, if it's a good thing :)
+
+Tests with one page context for each test:
+![img.png](DocumentationFiles/img.png)
+
+Tests with one page for all tests:
+![img_1.png](DocumentationFiles/img_1.png)
+
+##Code style
+```bash
+# reformat code with prettier
+npm run format
+
+# evaluate code with EsLint
+npm run lint
+```
+
+##Greetings!
+I hope I met the requirements, as I was a total newby in TS and Svelte. It was busy weekend :) I'm looking forward to discuss my work with you guys!
