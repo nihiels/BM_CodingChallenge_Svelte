@@ -1,16 +1,16 @@
-import { fakeCartData } from './cart';
-import { productsData } from './products';
+import {fakeCartData} from './cart';
+import {productsData} from './products';
 
 export function getFromApi() {
 	return {
 		cart: async () => {
 			return new Promise<typeof fakeCartData>((resolve) => {
-				setTimeout(resolve, 2000, fakeCartData);
+				setTimeout(resolve, 500, fakeCartData);
 			});
 		},
 		products: async () => {
 			return new Promise<typeof productsData>((resolve) => {
-				setTimeout(resolve, 3000, productsData);
+				setTimeout(resolve, 500, productsData);
 			});
 		}
 	};

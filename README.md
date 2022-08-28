@@ -57,3 +57,16 @@ Bonus:
 - Feel free to reach out if you have any questions
 
 _Good luck_
+
+##Work done
+Also for me a good overview about my done working steps...
+
+###Utils
+  - I wrote my first TS Function (*YEAH*), it gets a numer and returns it to a currency string
+###still todo:
+  tests unit: https://davipon.hashnode.dev/test-svelte-component-using-vitest-playwright
+  code cleaner in commit process
+  
+![img.png](img.png)
+
+![img_1.png](img_1.png)
